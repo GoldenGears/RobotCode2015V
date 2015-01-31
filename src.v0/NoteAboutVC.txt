@@ -1,0 +1,27 @@
+A quick note about the new version control system.
+
+Version control has been revamped to make it easier to switch between versions.
+Now, there will be three directories:
+src/
+	Code to be deployed. This is what Eclipse will see and what you can edit.
+SandBox/
+	Un-committed code. When a version is completed, but not fully tested, it goes here until it is ready to be committed. These can and will be overwritten a lot.
+Versions/
+	Code to be committed. When a version is finished, it is to be placed here and then pushed to the repository. Once a version has been committed, it should NOT be edited.
+	
+Each commit will ONLY store a version number. All notes about which files were changed go in ChangeLog.txt. All specific changes that were made go where they used to at the top of the files.
+
+Example:
+
+src/
+	Robot.cpp
+		// Tyler Robbins - 1-31-15 - Made a file!
+Sandbox/
+	src.v0/
+		Robot.cpp
+			// Tyler Robbins - 1-31-15 - Made a file!
+Versions/
+	.git/
+	src.v0/
+		Robot.cpp
+			// Tyler Robbins - 1-31-15 - Made a file!
